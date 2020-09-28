@@ -168,11 +168,11 @@ header nav {
   justify-content: space-around;
   padding: 0.25em 1em 0.25em 1em;
   width: 100%;
-  background: #7e685a;
+  background: #d49fb3;
 }
 header nav a {
   padding: 1em;
-  color: white;
+  color: #121212;
 }
 header nav a:link {
   text-decoration: none;
@@ -211,7 +211,7 @@ header nav a:hover {
   align-items: center;
   position: relative;
   margin: 16em 1em 2em 1em;
-  border: 4px groove #7e685a;
+  border: 4px groove #d49fb3;
   border-radius: 20%;
 }
 .main .heading {
@@ -224,16 +224,45 @@ header nav a:hover {
 .main .heading h1 {
   font-size: 3em;
   justify-content: flex-start;
+  max-width: 18em;
+  margin: auto;
+  text-align: center;
 }
 .main .heading h2 {
   font-size: 2em;
   margin: 1em 0 0 0;
+}
+.main .heading h3 {
+  font-size: 1.4em;
+  margin: 1em 0 0 0;
+}
+.main .heading .otherlinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.25em 1em;
+}
+.main .heading .otherlinks p {
+  padding: 0.25em 1em;
+}
+.main .heading .otherlinks a {
+  padding: 0.25em 1em;
 }
 .main .content {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+}
+.main .content .homeimgs {
+  position: relative;
+  top: 30px;
+  padding: 1em;
+  margin: 1em;
+}
+.main .content .homeimgs img {
+  max-block-size: 20em;
 }
 .main .content .list {
   display: flex;
@@ -251,6 +280,37 @@ header nav a:hover {
 }
 .main .content .list a {
   color: black;
+}
+.main .content .shootlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  margin: 4em;
+  line-height: 2;
+  align-self: flex-start;
+}
+.main .content .shootlist b {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.main .content .shootlist a {
+  color: black;
+}
+.main .gallery {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 1em;
+}
+.main .gallery img {
+  width: 15em;
+  margin: 0.25em;
+  border-radius: 50%;
 }
 @media only screen and (max-width: 1175px) {
   .main {
@@ -272,6 +332,7 @@ header nav a:hover {
   }
   .main .heading h1 {
     font-size: 2.5em;
+    max-width: 10em;
   }
   .main .heading h2 {
     font-size: 1.6em;
